@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
 const Container720 = styled.div`
   width: 100%;
-  max-width: 720px;
+  max-width: 719px;
   & > * {
     :not(:last-child) {
       margin-bottom: 16px;
