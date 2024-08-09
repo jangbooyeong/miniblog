@@ -20,7 +20,7 @@ const MainTitleText = styled.p`
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <MainTitleText>FRONT-END BLOG</MainTitleText>
       <Routes>
         <Route index element={<MainPage />} />
