@@ -8,37 +8,37 @@
     "lists": [
       {
         "id": 11,
-        "imageUrl": "../assets/hidden.png",
+        "imageUrl": "/assets/hidden.png",
         "title": "hidden 갯수별 숨김 함수",
         "content": "초기 아이템 데이터를 비동기적으로 가져옵니다.\n가져온 데이터에서 아이템 배열을 추출합니다.추출한 각 아이템에 대해 HTML 요소를 생성하고, 화면에 추가합니다.\n초기에는 initialVisibleItemsW 및 initialVisibleItemsM 값에 따라 일부 아이템을 화면에서 숨깁니다.more-button이 클릭되면 더 많은 아이템을 표시하는 함수를 호출하는 이벤트 리스너를 설정합니다.코드 실행 중에 오류가 발생하면 콘솔에 오류 메시지를 출력합니다.마지막으로 초기 화면을 로드합니다."
       },
       {
         "id": 12,
-        "imageUrl": "../assets/more.png",
+        "imageUrl": "/assets/more.png",
         "title": "more button 사라지는 함수",
         "content": "hidden-w 및 hidden-m 클래스를 가진 요소들을 찾아서 가져옵니다.\nhidden-w 클래스를 가진 요소들을 순차적으로 찾아내어 해당 클래스를 제거합니다.마찬가지로 hidden-m 클래스를 가진 요소들도 순차적으로 찾아내어 해당 클래스를 제거합니다.\n모든 숨겨진 아이템이 나타나면 더 보기 버튼을 화면에서 숨깁니다.즉, 이 함수는 더 보기 버튼을 클릭하면 숨겨진 아이템을 모두 나타나게 하고, 더 이상 나타낼 아이템이 없다면 더 보기 버튼을 화면에서 숨기는 역할을 합니다."
       },
       {
         "id": 13,
-        "imageUrl": "../assets/high.png",
+        "imageUrl": "/assets/high.png",
         "title": "내림차순으로 정렬하는 함수",
         "content": "arrayList 변수에는 문서에서 array-list 클래스를 가진 요소 중 세 번째 요소를 선택하여 가져와 active 클래스를 추가합니다.\nsectionWrapper 변수에는 문서에서 id가 section-wrapper인 요소를 선택하여 가져온 후, 해당 요소의 HTML 내용을 초기화합니다.\ncategoryGoodsData 배열을 가격을 기준으로 내림차순으로 정렬합니다.정렬된 각 아이템에 대해 categoryGoodsItem 함수를 호출하여 해당 아이템의 HTML 요소를 생성하고, 이를 sectionWrapper에 추가합니다."
       },
       {
         "id": 14,
-        "imageUrl": "../assets/row.png",
+        "imageUrl": "/assets/row.png",
         "title": "오름차순으로 정렬하는 함수",
         "content": "arrayList 변수에는 문서에서 array-list 클래스를 가진 요소 중 두 번째 요소를 선택하여 가져와 active 클래스를 추가합니다.\nsectionWrapper 변수에는 문서에서 id가 section-wrapper인 요소를 선택하여 가져온 후, 해당 요소의 HTML 내용을 초기화합니다.categoryGoodsData 배열을 가격을 기준으로 오름차순으로 정렬합니다.\n정렬된 각 아이템에 대해 categoryGoodsItem 함수를 호출하여 해당 아이템의 HTML 요소를 생성하고, 이를 sectionWrapper에 추가합니다."
       },
       {
         "id": 15,
-        "imageUrl": "../assets/parmas.png",
+        "imageUrl": "/assets/parmas.png",
         "title": "URL에서 쿼리 매개변수를 가져오는 함수",
         "content": "문서가 완전히 로드되면 실행되는 이벤트 리스너를 추가합니다.\nURL에서 쿼리 매개변수를 가져와서 id 변수에 할당합니다./data/images.json 경로에서 이미지 데이터를 가져옵니다.가져온 데이터가 정상적으로 응답되지 않으면 네트워크 오류로 images.json 파일을 검색할 수 없다는 에러를 던집니다.응답 데이터를 JSON 형식으로 변환합니다.\n변환된 데이터에서 해당하는 id 값과 일치하는 이미지 데이터를 찾습니다.찾은 이미지 데이터를 이용하여 화면에 이미지 요소를 생성하고 표시합니다.만약 imageData가 존재하지 않으면 해당 id에 대한 이미지 데이터를 찾을 수 없다는 에러를 콘솔에 출력합니다.\n코드 실행 중에 발생한 오류가 있다면 해당 오류 메시지를 콘솔에 출력합니다."
       },
       {
         "id": 16,
-        "imageUrl": "../assets/login.png",
+        "imageUrl": "/assets/login.png",
         "title": "가짜 데이터로 로그인 하는 함수",
         "content": "문서가 완전히 로드되면 실행되는 이벤트 리스너를 추가합니다.\nlogin-button id를 가진 요소를 찾아 loginButton 변수에 할당합니다.loginButton에 클릭 이벤트 리스너를 추가합니다.memId와 memPasswd id를 가진 입력 요소에서 사용자가 입력한 값들을 가져옵니다.usersDatabase 배열에는 사용자의 아이디와 비밀번호 정보가 저장되어 있습니다.\n로그인 여부를 나타내는 loggedIn 변수를 false로 초기화합니다.usersDatabase 배열을 순회하면서 사용자가 입력한 아이디와 비밀번호가 일치하는지 확인합니다.일치하는 경우 loggedIn을 true로 설정하고 루프를 종료합니다.\n만약 로그인이 성공했다면 Login successful! 알림을 표시하고, 메인 홈페이지로 이동하는 코드를 실행합니다.로그인이 실패한 경우 Login failed. Check your ID and password. 알림을 표시합니다."
       }
@@ -53,37 +53,37 @@
     "lists": [
       {
         "id": 21,
-        "imageUrl": "../assets/buttonR.png",
+        "imageUrl": "/assets/buttonR.png",
         "title": "버튼 클릭시 이벤트 발생하는 함수",
         "content": "Button이라는 함수 컴포넌트를 정의합니다.\nprops 객체에서 title과 onClick을 추출합니다.StyledButton 컴포넌트에 클릭 이벤트 핸들러(onClick)와 제목(title)을 전달하여 버튼을 렌더링합니다."
       },
       {
         "id": 22,
-        "imageUrl": "../assets/inputR.png",
+        "imageUrl": "/assets/inputR.png",
         "title": "텍스트를 작성하는 아이템을 만드는 함수",
         "content": "StyledTextarea라는 스타일드 컴포넌트를 정의합니다.\n텍스트 영역의 너비를 조정하는 스타일을 설정합니다.props 객체에서 height 속성이 존재하면 해당 높이로 텍스트 영역의 높이를 동적으로 조정합니다.텍스트 영역의 패딩, 폰트 크기, 줄 높이를 지정하는 스타일을 설정합니다.\nTextInput이라는 함수 컴포넌트를 정의합니다.props 객체에서 height, value, onChange를 추출합니다.StyledTextarea 컴포넌트에 높이(height), 값(value), 변경 이벤트 핸들러(onChange)를 전달하여 렌더링합니다."
       },
       {
         "id": 23,
-        "imageUrl": "../assets/listitemR.png",
+        "imageUrl": "/assets/listitemR.png",
         "title": "화면에 아이템을 만드는 함수",
         "content": "PostListItem이라는 함수 컴포넌트를 정의합니다.\nprops 객체에서 post와 onClick을 추출합니다.클릭 이벤트가 발생하면 onClick 핸들러를 실행하는 <Wrapper>로 감싸진 제목(post.title)을 표시합니다."
       },
       {
         "id": 24,
-        "imageUrl": "../assets/listR.png",
+        "imageUrl": "/assets/listR.png",
         "title": "key값에 해당하는 리스트 만드는 함수",
         "content": "PostList라는 함수 컴포넌트를 정의합니다.props 객체에서 posts와 onClickItem을 추출합니다.\n<Wrapper>로 감싸진 여러 개의 <PostListItem> 컴포넌트를 렌더링합니다.posts 배열을 순회하면서 각 post에 대해 <PostListItem>을 생성합니다.\n각각의 <PostListItem>에는 key로 post.id를, post와 onClickItem을 props로 전달합니다.<PostListItem>이 클릭되면 onClickItem 함수를 호출하며 해당 post를 전달합니다."
       },
       {
         "id": 25,
-        "imageUrl": "../assets/mainR.png",
+        "imageUrl": "/assets/mainR.png",
         "title": "메인화면에 하위props 가져와서 보여지는 함수",
         "content": "<Wrapper>로 감싸진 컴포넌트들을 반환합니다.\n<Container720> 안에 Write a post 라는 제목의 버튼이 있으며, 클릭 시 /post-write 로 이동하는 이벤트 핸들러가 설정되어 있습니다.<PostList> 컴포넌트가 렌더링되고,\n data 배열을 전달하여 포스트 목록이 표시되며, 각 포스트를 클릭하면 해당 포스트의 상세 페이지로 이동하는 이벤트 핸들러가 설정되어 있습니다."
       },
       {
         "id": 26,
-        "imageUrl": "../assets/writeR.png",
+        "imageUrl": "/assets/writeR.png",
         "title": "post-write 링크된 페이를 만든 함수",
         "content": "<Wrapper>로 감싸진 컴포넌트들을 반환합니다.\n<Container> 안에 Title 라벨과 title 값을 입력받는 <TextInput>이 있습니다. 제목이 변경될 때마다 setTitle 함수가 호출됩니다.Content 라벨과 content 값을 입력받는 높이가 큰 <TextInput>이 있습니다. \n내용이 변경될 때마다 setContent 함수가 호출됩니다.Write a post라는 제목의 버튼이 있으며, 클릭 시 ( / )로 이동하는 이벤트 핸들러가 설정되어 있습니다."
       }
