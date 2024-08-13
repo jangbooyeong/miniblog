@@ -32,7 +32,7 @@ function ContentListItem(props) {
 
   return( 
     <Wrapper>
-      <ImageContainer src={list.imageUrl}></ImageContainer>
+      <ImageContainer src={process.env.PUBLIC_URL + list.imageUrl}></ImageContainer>
       <TitleText>{list.title}</TitleText>
       <ContentText>{list.content}</ContentText>
     </Wrapper>
