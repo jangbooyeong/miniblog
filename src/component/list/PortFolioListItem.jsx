@@ -99,7 +99,7 @@ function PortFolioListItem(props) {
       <Effect>
         <Htop>{post.title}</Htop>
         <Hbottom>{post.detail}</Hbottom>
-        <ImageContainer src={post.imageUrl}></ImageContainer>
+        <ImageContainer src={process.env.PUBLIC_URL + post.imageUrl}></ImageContainer>
         <Container>
           <TitleText>{post.title}</TitleText>
           <ContentText>{post.content}</ContentText>
