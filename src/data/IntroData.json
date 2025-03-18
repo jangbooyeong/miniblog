@@ -107,7 +107,7 @@
     "id": 4,
     "title": "Node.js란?",
     "content": "자바스크립트(Javascript)를 활용하며, Non-blocking I/O와 단일 스레드 이벤트 루프를 통한 높은 처리 성능을 가지고 있는 것이 특징이다.",
-    "imageUrl": "https://pic1.zhimg.com/v2-20c65f860d74a2cda0a17683335aff92_ipico.jpg?source=172ae18b",
+    "imageUrl": "https://images.velog.io/images/julianneyi/post/9b233f6d-386c-4f3a-9468-4f2241151cc2/nodejs_banner.png",
     "lists": [
       {
         "id": 41,
